@@ -1,6 +1,6 @@
 # Software Testing Exercises (Python + pytest)
 
-![Tests](https://github.com/<your-username>/<repo-name>/actions/workflows/tests.yml/badge.svg)
+![Tests](https://github.com/alicechua/CSC491-software-testing/actions/workflows/tests.yml/badge.svg)
 
 This repository contains **hands-on labs** for practicing different kinds of software testing with Python.
 You’ll write and run **unit tests, integration tests, and end-to-end (E2E) tests**, and set up **continuous testing with GitHub Actions**.
