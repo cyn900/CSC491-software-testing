@@ -113,6 +113,43 @@ pytest -vv exercise3_e2e_cli
 
 ---
 
+## 📈 Code Coverage
+
+### 1) Install
+
+```bash
+pip install pytest-cov
+```
+
+### 2) Run with coverage (local)
+
+Common commands:
+
+```bash
+# Generate HTML and XML reports
+pytest --cov=. --cov-report=html --cov-report=xml:coverage.xml
+```
+
+Open the HTML report in your browser:
+
+* **macOS**
+
+  ```bash
+  open htmlcov/index.html
+  ```
+* **Windows (PowerShell / CMD)**
+
+  ```bash
+  start htmlcov\index.html
+  ```
+* **Linux**
+
+  ```bash
+  xdg-open htmlcov/index.html
+  ```
+
+---
+
 ## 🧱 Typical Layout (by exercise)
 
 ```
