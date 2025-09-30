@@ -12,7 +12,7 @@ Here’s a clean, student-friendly README section you can drop in under **exerci
 ### 1) Change into the Streamlit E2E folder
 
 ```bash
-cd exercise3_e2e_streamlit
+cd exercise4_e2e_streamlit
 ```
 
 ### 2) Install dependencies

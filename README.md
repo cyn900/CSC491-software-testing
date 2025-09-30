@@ -113,6 +113,13 @@ pytest -vv exercise3_e2e_cli
 
 ---
 
+### 4) End-to-End UI Testing (Streamlit + Cypress)
+
+* This exercise replaces the CLI E2E with a real UI: a tiny Streamlit app tested in a real browser via Cypress.
+* More details refer to the README.md in exercise4_e2e_streamlit
+
+👉 **Learning goal:** simulate **user interface interactions** and validate the whole system.
+
 ## 📈 Code Coverage
 
 ### 1) Install
@@ -166,6 +173,8 @@ exercise2_integration/
 exercise3_e2e_cli/
   calculator.py
   test_e2e_cli.py
+
+exercise4_e2e_streamlit/
 ```
 
 ---
