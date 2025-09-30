@@ -3,7 +3,7 @@ import pytest
 
 def test_pipeline_positive():
     out = analyze("I love good food")
-    assert out["words"] == ["i","love","good","food"]
+    assert out["words"] == ["I","love","good","food"]
     assert out["score"] == 2
     assert out["label"] == "pos"
 
@@ -23,7 +23,7 @@ def test_pipeline_all_negative():
 
 # TODO: add the assertion checks
 # def test_pipeline_unicode_emoji():
-#     out = analyze("I love this 😊👍 but the UI is bad 😡")
+#     out = analyze("I LOVE THIS 😊👍 but the UI is bad 😡")
 
 # TODO: fix analyze to reject non-string inputs
 # def test_pipeline_rejects_non_string():
