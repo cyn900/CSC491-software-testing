@@ -1,0 +1,15 @@
+{
+  "name": "streamlit-e2e",
+  "private": true,
+  "scripts": {
+    "start:streamlit": "streamlit run app.py --server.headless true --server.port 8501",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --browser chrome --headless",
+    "test:e2e": "start-server-and-test start:streamlit http://localhost:8501 cy:run"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^10.1.0",
+    "cypress": "^13.13.1",
+    "start-server-and-test": "^2.0.3"
+  }
+}
