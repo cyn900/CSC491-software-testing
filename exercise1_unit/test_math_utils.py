@@ -1,6 +1,7 @@
 import math
 import pytest
 from math_utils import add, div, clamp
+import numpy as np
 
 # === Testing Add ===
 def test_add_basic():
@@ -34,6 +35,15 @@ def test_div_normal():
 def test_div_raises_on_zero():
     with pytest.raises(ValueError):
         div(1, 0)
+
+def test_div_precision_contract_is_float64_like():
+    """
+    Contract: div(1, 3) should be ~float64-precise. If someone switches to float32
+    (e.g., via NumPy), this tight tolerance will catch it.
+    """
+    res = div(1.0, 3.0)
+    # float64 has ~1e-16 epsilon; this 1e-12 guard will FAIL for float32 (~1e-8 off)
+    assert abs(res - (1/3)) < 1e-12
 
 # TODO: test div with floats
 # def test_div_floats():
