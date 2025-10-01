@@ -33,7 +33,7 @@ python3.10 -m venv .venv
 source .venv/bin/activate        # Windows (PowerShell): .\.venv\Scripts\Activate.ps1
 
 # 2) Install test tools
-pip install -U pip pytest
+python -m pip install -U pip pytest
 
 # 3) Run all tests
 pytest -q

@@ -1,4 +1,3 @@
-// cypress/support/commands.js (or inline in your spec)
 // Open the selectbox labeled "Operation" and choose an option by visible text.
 function selectFromStreamlitSelectbox(labelText, optionText) {
   // 1) Find the specific selectbox by its label

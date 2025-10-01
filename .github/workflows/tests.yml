@@ -3,6 +3,7 @@ on:
   push:
   pull_request:
   # TODO: enable manual workflow runs
+  workflow_dispatch:
 jobs:
   ci:
     runs-on: ubuntu-latest
