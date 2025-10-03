@@ -2,7 +2,7 @@ name: tests
 on:
   push:
   pull_request:
-  # TODO: enable manual workflow runs
+  workflow_dispatch:  # Enables manual workflow runs
 jobs:
   ci:
     runs-on: ubuntu-latest
